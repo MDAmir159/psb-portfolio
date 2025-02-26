@@ -1,3 +1,4 @@
+import { DESKTOP_IMG, PEOPLE_IMG, TELEPHONE_IMG } from "@/utils/urls/images";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,7 +19,7 @@ const SupportPage = () => {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 -mt-20 relative z-10">
         {/* Contact Support */}
         <div className="bg-white p-6 shadow-lg rounded-lg text-center">
-          <Image src="/icons/desktop.png" alt="Contact Support" width={60} height={60} className="mx-auto" />
+          <Image src={DESKTOP_IMG} alt="Contact Support" width={60} height={60} className="mx-auto" />
           <h2 className="text-xl font-semibold mt-4 text-color2">EMAIL/WEB-BASED SUPPORT</h2>
           <p className="mt-2 text-gray-600">Need help? Reach out to our support team.</p>
           <Link href="/contact" className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
@@ -28,7 +29,7 @@ const SupportPage = () => {
 
         {/* Knowledge Base */}
         <div className="bg-white p-6 shadow-lg rounded-lg text-center">
-          <Image src="/icons/people.png" alt="Onsite Support" width={60} height={60} className="mx-auto" />
+          <Image src={PEOPLE_IMG} alt="Onsite Support" width={60} height={60} className="mx-auto" />
           <h2 className="text-xl font-semibold mt-4 text-color2">Onsite Support</h2>
           <p className="mt-2 text-gray-600">Need help? Reach out to our support team.</p>
           <Link href="/contact" className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
@@ -38,7 +39,7 @@ const SupportPage = () => {
 
         {/* Training & Webinars */}
         <div className="bg-white p-6 shadow-lg rounded-lg text-center">
-          <Image src="/icons/telephone.png" alt="Training & Webinars" width={60} height={60} className="mx-auto" />
+          <Image src={TELEPHONE_IMG} alt="Training & Webinars" width={60} height={60} className="mx-auto" />
           <h2 className="text-xl font-semibold mt-4 text-color2">Training & Webinars</h2>
           <p className="mt-2 text-gray-600">Need help? Reach out to our support team.</p>
           <Link href="/contact" className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">

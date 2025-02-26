@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { LOGO_URL } from "@/utils/urls/images";
 
 const navBarItems = [
     { name: "Home", route: "/" },
@@ -20,7 +21,7 @@ const Navbar = () => {
     return (
         <nav className="flex items-center justify-between px-6 py-2 bg-white shadow-md">
             {/* Logo */}
-            <Image src="/iconLogo.png" alt="Vushki Logo" height={30} width={80} />
+            <Image src={LOGO_URL} alt="Vushki Logo" height={30} width={80} />
 
             {/* Mobile Menu Button */}
             <button
