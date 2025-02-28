@@ -20,19 +20,19 @@ const topics: Topic[] = [
         description: 'Keep up with the latest happenings at Dassault Systèmes',
         articles: [
             {
-                image: nextConfig.basePath + 'images/insights/img1.jpg',
+                image: nextConfig.basePath + '/images/insights/img1.jpg',
                 alt: 'Engineering',
                 title: 'Revolutionizing Process Engineering',
                 description: 'Imagine this: You’re a process engineer at ...',
             },
             {
-                image: nextConfig.basePath + 'images/insights/img2.jpg',
+                image: nextConfig.basePath + '/images/insights/img2.jpg',
                 alt: 'Workforce',
                 title: 'Enabling Workforce Of The Future with',
                 description: 'Today’s world is changing rapidly, and the ...',
             },
             {
-                image: nextConfig.basePath + 'images/insights/img3.jpg',
+                image: nextConfig.basePath + '/images/insights/img3.jpg',
                 alt: 'AI',
                 title: '11 real ways AI is transforming',
                 description: 'From earlier diagnosis to tailored treatments to precision surgery ...',
@@ -45,19 +45,19 @@ const topics: Topic[] = [
             'Today’s challenges are being met with innovative design and manufacturing and improve through simulation.',
         articles: [
             {
-                image: nextConfig.basePath + 'images/insights/img4.jpg',
+                image: nextConfig.basePath + '/images/insights/img4.jpg',
                 alt: 'Engineering',
                 title: 'Revolutionizing Process Engineering',
                 description: 'Imagine this: You’re a process engineer at ...',
             },
             {
-                image: nextConfig.basePath + 'images/insights/img5.jpg',
+                image: nextConfig.basePath + '/images/insights/img5.jpg',
                 alt: 'Simulation',
                 title: 'GPU-powered CFD Simulation',
                 description: 'Gearbox manufacturers face complex design and engineering challenges ...',
             },
             {
-                image: nextConfig.basePath + 'images/insights/img6.jpg',
+                image: nextConfig.basePath + '/images/insights/img6.jpg',
                 alt: 'Workforce',
                 title: 'Enabling Workforce Of The Future with',
                 description: 'Today’s world is changing rapidly, and the ...',
