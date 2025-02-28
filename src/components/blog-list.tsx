@@ -106,14 +106,53 @@ const BlogList = () => {
             frequency: "2 posts/month",
             domainAuthority: 30,
             email: "contact@cadtrendsweekly.com",
-        }
+        },
+        {
+            title: "Architectural Insights",
+            blogUrl: "https://www.architecturalinsights.com/",
+            followUrl: "#",
+            imageUrl: "https://i.pravatar.cc/400?img=33", // Dummy image
+            description:
+                "Architectural Insights is a blog dedicated to the latest trends, innovations, and design practices in the architectural world. Our mission is to bring together architects, designers, and builders to discuss new materials, sustainable building practices, and emerging trends in the industry. Whether you're a professional or a design enthusiast, you'll find valuable insights to inspire your next project.",
+            followers: 312,
+            frequency: "1 post/month",
+            domainAuthority: 27,
+            email: "info@architecturalinsights.com",
+        },
+        {
+            title: "Engineering Tomorrow",
+            blogUrl: "https://www.engineeringtomorrow.com/",
+            followUrl: "#",
+            imageUrl: "https://i.pravatar.cc/400?img=22", // Dummy image
+            description:
+                "Engineering Tomorrow explores the cutting-edge advancements in engineering, from robotics and automation to sustainable energy solutions. Our blog provides in-depth analysis, case studies, and interviews with leading engineers and innovators. We focus on the future of engineering, ensuring that you stay informed about the technologies shaping tomorrow's world.",
+            followers: 532,
+            frequency: "3 posts/month",
+            domainAuthority: 35,
+            email: "contact@engineeringtomorrow.com",
+        },
+        {
+            title: "The CAD Revolution",
+            blogUrl: "https://www.cadrevolution.com/",
+            followUrl: "#",
+            imageUrl: "https://i.pravatar.cc/400?img=69", // Dummy image
+            description:
+                "The CAD Revolution is a blog for CAD professionals and enthusiasts who are passionate about the tools, techniques, and technologies that are transforming the design world. We cover everything from 3D modeling to virtual reality integration in design workflows. Join us as we dive deep into the latest advancements in CAD software, techniques, and industry best practices.",
+            followers: 768,
+            frequency: "1 post/week",
+            domainAuthority: 40,
+            email: "support@cadrevolution.com",
+        },
     ];
 
 
     return (
-        <div className="max-w-3xl mx-auto p-4">
-            <h2 className="text-center text-2xl font-bold my-4 text-black">Blog</h2>
-            <div className="space-y-6">
+        <div className="max-w-7xl mx-auto p-4">
+            <h2 className="text-center text-4xl font-bold my-4 text-black">Blog</h2>
+            <p className="text-center mb-8 text-black">
+                Some of our favorite blogs that cover the latest trends, tips, and insights in the CAD world
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {blogs.map((blog, index) => (
                     <BlogCard key={index} {...blog} />
                 ))}
