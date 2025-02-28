@@ -82,7 +82,6 @@ const SupportPage = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
