@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import nextConfig from "../../next.config";
 
 interface BlogCardProps {
     title: string;
@@ -55,7 +56,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
                     </button>
                     <button className="border border-gray-400 px-4 py-2 rounded text-sm text-black">
                         <Image
-                            src="/icons/mail.png"
+                            src={nextConfig.basePath + "/icons/mail.png"}
                             alt="Get Email Contact"
                             width={16}
                             height={16}

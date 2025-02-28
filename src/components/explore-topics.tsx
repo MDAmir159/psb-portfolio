@@ -83,7 +83,7 @@ const ExploreTopics: React.FC = () => {
                         {topic.articles.map((article, idx) => (
                             <div key={idx} className="bg-white p-4 rounded shadow">
                                 <Image
-                                    src={article.image}
+                                    src={nextConfig.basePath + article.image}
                                     alt={article.alt}
                                     width={400}
                                     height={200}
