@@ -10,7 +10,6 @@ const navBarItems = [
     { name: "Home", route: "/" },
     { name: "About", route: "/about" },
     { name: "Services", route: "/services" },
-    { name: "Ecosystem", route: "/ecosystem" },
     { name: "Insights", route: "/insights" },
     { name: "Support", route: "/support" },
 ];
