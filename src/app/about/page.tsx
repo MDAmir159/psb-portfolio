@@ -10,8 +10,8 @@ const containerStyle = {
 };
 
 const center = {
-    lat: 23.8103, // Set your latitude here (e.g., Dhaka, Bangladesh)
-    lng: 90.4125, // Set your longitude here (e.g., Dhaka, Bangladesh)
+    lat: 51.5074, // Set your latitude here (e.g., London, UK)
+    lng: -0.1278, // Set your longitude here (e.g., London, UK)
 };
 
 const AboutUs = () => {
@@ -47,13 +47,14 @@ const AboutUs = () => {
     return (
         <div className="font-sans bg-white">
             {/* Local Navbar for Section Navigation */}
-            <div className={`sticky top-16 w-full bg-white shadow-md z-30 ${isScrolled ? 'top-0' : ''}`}>
+            <div className={`sticky top-[70px] w-full bg-white shadow-md z-20 ${isScrolled ? 'top-0 z-30' : ''}`}>
                 <div className="container mx-auto flex justify-end space-x-6 px-6 py-4">
                     <Link href="#company" className="text-gray-700 hover:text-blue-600">Company</Link>
                     <Link href="#mission" className="text-gray-700 hover:text-blue-600">Our Mission</Link>
                     <Link href="#contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
                 </div>
             </div>
+
             {/* About Us Section */}
             <div className="bg-color1 text-white py-16 text-center h-[50vh] flex items-center relative">
                 <div className="w-[40%] ml-[15%] flex flex-col gap-4">
