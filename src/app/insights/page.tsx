@@ -11,7 +11,7 @@ const InsightsPage = () => {
       <div className="bg-gray-100 min-h-screen">
         {/* Hero Section */}
         <div className="bg-cover bg-center text-white py-16 text-center h-[50vh] flex items-center relative"
-          style={{ backgroundImage: `url(${nextConfig.basePath}'/images/insights/hero.jpg')` }}
+          style={{ backgroundImage: `url(${nextConfig.basePath + '/images/insights/hero.jpg'})` }}
         >
           <div className="w-[40%] ml-[15%] flex flex-col gap-4">
             <h1 className="text-4xl font-bold text-start">Insights</h1>

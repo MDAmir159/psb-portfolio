@@ -12,7 +12,7 @@ const SupportPage = () => {
         {/* Hero Section */}
         <div
           className="text-white py-16 text-center h-[50vh] flex items-center relative bg-cover bg-center"
-          style={{ backgroundImage: `url(${nextConfig.basePath}'/images/support/hero.jpg')` }} // Replace with actual image path
+          style={{ backgroundImage: `url(${nextConfig.basePath + '/images/support/hero.jpg'})` }} // Replace with actual image path
         >
           <div className="w-[40%] ml-[15%] flex flex-col gap-4 bg-black/50 p-6 rounded-md">
             <h1 className="text-4xl font-bold text-start">Support</h1>
