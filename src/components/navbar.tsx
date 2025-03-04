@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
@@ -16,6 +16,13 @@ const navBarItems = [
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+
+    const [currentPath, setCurrentPath] = useState(""); // To track the current route
+
+    useEffect(() => {
+        // Update the currentPath state on route change
+        setCurrentPath(window.location.pathname);
+    }, []);
 
     return (
         <nav className="flex items-center justify-between px-6 py-2 bg-white shadow-md">
@@ -35,11 +42,13 @@ const Navbar = () => {
                 {
                     navBarItems.map((item, index) => (
                         <li key={index} className="py-2 md:py-0">
-                            <Link href={item.route} className="hover:text-gray-900">
-                                <b>
-                                    {item.name}
-                                </b>
+                            <Link
+                                href={item.route}
+                                className={`hover:text-gray-900 ${currentPath === item.route ? "font-bold border-b-2 border-black pb-1" : ""}`}
+                            >
+                                <b>{item.name}</b>
                             </Link>
+
                         </li>
                     ))
                 }
