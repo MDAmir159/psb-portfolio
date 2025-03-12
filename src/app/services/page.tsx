@@ -169,8 +169,9 @@ function ServicePage() {
                                 <img
                                     src={`${nextConfig.basePath}${section.image}`}
                                     alt={section.title}
-                                    className="w-full h-auto rounded-lg shadow-lg"
+                                    className="w-full h-auto rounded-lg shadow-xl shadow-black/50"
                                 />
+
                             </motion.div>
                         </div>
                     );
