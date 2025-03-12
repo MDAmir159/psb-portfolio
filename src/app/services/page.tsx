@@ -113,7 +113,7 @@ function ServicePage() {
                     </div>
                     <div>
                         <video key={selectedTab.videoSrc} className="w-full border" controls={false} autoPlay>
-                            <source src={selectedTab.videoSrc} type="video/mp4" />
+                            <source src={`${nextConfig.basePath}${selectedTab.videoSrc}`} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
