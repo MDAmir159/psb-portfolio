@@ -5,13 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { LOGO_URL } from "@/utils/urls/images";
+import nextConfig from "../../next.config";
 
 const navBarItems = [
-    { name: "Home", route: "/" },
-    { name: "About", route: "/about" },
-    { name: "Services", route: "/services" },
-    { name: "Insights", route: "/insights" },
-    { name: "Support", route: "/support" },
+    { name: "Home", route: nextConfig.basePath + "/" },
+    { name: "About", route: nextConfig.basePath + "/about" },
+    { name: "Services", route: nextConfig.basePath + "/services" },
+    { name: "Insights", route: nextConfig.basePath + "/insights" },
+    { name: "Support", route: nextConfig.basePath + "/support" },
 ];
 
 const Navbar = () => {
