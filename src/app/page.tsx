@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import Testimonials from "@/components/testimonials";
 import { useState, useEffect } from "react";
 import nextConfig from "../../next.config";
+import Image from "next/image";
 
 const images = [
   '/images/home/img1.jpg',
@@ -112,7 +113,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-
         {/* Left Arrow */}
         <button
           onClick={prevImage}
@@ -120,7 +120,6 @@ export default function Home() {
         >
           &lt;
         </button>
-
         {/* Right Arrow */}
         <button
           onClick={nextImage}
@@ -129,35 +128,41 @@ export default function Home() {
           &gt;
         </button>
       </div>
-
       <br /><br />
-
       {/* why us */}
       <div className="bg-gray-800 text-white py-10 w-full max-w-7xl mx-auto rounded-[35px]">
         <h1 className="text-4xl font-bold text-center mb-14">Why Us?</h1>
         <div className="flex flex-wrap justify-around">
           {whyUsItems.map((item, index) => (
             <div key={index} className="text-center mb-8 w-full sm:w-1/3">
-              <img src={nextConfig.basePath + item.imgSrc} alt={item.alt} className="mx-auto mb-4 h-[120px]" />
+              <Image
+                src={nextConfig.basePath + item.imgSrc}
+                alt={item.alt}
+                className="mx-auto mb-4 h-[120px]"
+                width={120} // specify the width for the image
+                height={120} // specify the height for the image
+              />
               <h2 className="text-xl font-semibold">{item.title}</h2>
               <p className="px-9">{item.description}</p>
             </div>
           ))}
         </div>
       </div>
-
       <div className=" py-10 w-full max-w-7xl mx-auto">
         <h1 className="font-bold text-center mb-10 text-gray-800">
           <span className="text-4xl">{'With our CAD Services'}</span> <br />
           <span className="text-3xl">{"We implement industrial design, patent, manufacturing, licensing and many more"}</span>
         </h1>
-
-
-
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
           {services.map((service, index) => (
             <div key={index} className="bg-white p-4 rounded shadow hover:shadow-lg hover:scale-105 transition-transform duration-300">
-              <img src={nextConfig.basePath + service.imgSrc} alt={service.alt} className="mb-4" />
+              <Image
+                src={nextConfig.basePath + service.imgSrc}
+                alt={service.alt}
+                className="mb-4"
+                width={500} // specify the width for the image
+                height={300} // specify the height for the image
+              />
               <h2 className="text-xl font-semibold">{service.title}</h2>
             </div>
           ))}
@@ -167,7 +172,6 @@ export default function Home() {
           <b>View All Services</b>
         </button>
       </div>
-
     </>
   );
 }
