@@ -1,6 +1,5 @@
 "use client";
 import Navbar from "@/components/navbar";
-import Testimonials from "@/components/testimonials";
 import { useState, useEffect } from "react";
 import nextConfig from "../../next.config";
 import Image from "next/image";
