@@ -8,11 +8,11 @@ import { LOGO_URL } from "@/utils/urls/images";
 import nextConfig from "../../next.config";
 
 const navBarItems = [
-    { name: "Home", route: nextConfig.basePath + "/" },
-    { name: "About", route: nextConfig.basePath + "/about" },
-    { name: "Services", route: nextConfig.basePath + "/services" },
-    { name: "Insights", route: nextConfig.basePath + "/insights" },
-    { name: "Support", route: nextConfig.basePath + "/support" },
+    { name: "Home", route: "/" },
+    { name: "About", route: "/about" },
+    { name: "Services", route: "/services" },
+    { name: "Insights", route: "/insights" },
+    { name: "Support", route: "/support" },
 ];
 
 const Navbar = () => {
@@ -45,7 +45,7 @@ const Navbar = () => {
                         <li key={index} className="py-2 md:py-0">
                             <Link
                                 href={item.route}
-                                className={`hover:text-gray-900 ${currentPath === item.route ? "font-bold border-b-2 border-black pb-1" : ""}`}
+                                className={`hover:text-gray-900 ${currentPath === nextConfig.basePath + item.route ? "font-bold border-b-2 border-black pb-1" : ""}`}
                             >
                                 <b>{item.name}</b>
                             </Link>
