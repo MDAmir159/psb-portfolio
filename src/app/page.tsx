@@ -103,7 +103,7 @@ export default function Home() {
       <div className="relative">
         <div
           className="text-white py-16 text-center h-[80vh] flex items-center relative bg-cover bg-center transition-all duration-1000 ease-in-out"
-          style={{ backgroundImage: nextConfig.basePath + `url(${images[currentImageIndex]})` }}
+          style={{ backgroundImage: `url( ${nextConfig.basePath + images[currentImageIndex]})` }}
         >
           <div className="w-[60%] ml-[15%] flex flex-col gap-4 p-6 rounded-md">
             <h1 className="text-6xl font-bold text-start">Welcome to PSB</h1>
