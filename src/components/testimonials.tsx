@@ -100,7 +100,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: (typeof testimonials)[0
         <span key={i} className="text-red-500">★</span>
       ))}
     </div>
-    <p className="text-gray-700">"{testimonial.review}"</p>
+    <p className="text-gray-700">&quot;{testimonial.review}&quot;</p>
     <a href="#" className="text-blue-500 text-sm mt-2 block">
       Read the full SmartDraw review
     </a>

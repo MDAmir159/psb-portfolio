@@ -34,7 +34,6 @@ const Counter = ({ target }: { target: number }) => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-        let start = 0;
         const duration = 2000; // Animation duration in ms
         const startTime = performance.now();
 

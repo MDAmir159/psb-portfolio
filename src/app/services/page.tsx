@@ -3,6 +3,7 @@ import Navbar from '@/components/navbar';
 import React, { useState } from 'react';
 import nextConfig from '../../../next.config';
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 const sections = [
     {
@@ -166,9 +167,11 @@ function ServicePage() {
                                 viewport={{ once: true, amount: 0.2 }}
                                 variants={fadeInFromSide(isEven ? "right" : "left")}
                             >
-                                <img
+                                <Image
                                     src={`${nextConfig.basePath}${section.image}`}
                                     alt={section.title}
+                                    width={500} // specify the width
+                                    height={300} // specify the height
                                     className="w-full h-auto rounded-lg shadow-xl shadow-black/50"
                                 />
 
