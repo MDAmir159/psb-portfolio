@@ -102,7 +102,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: (typeof testimonials)[0
     </div>
     <p className="text-gray-700">&quot;{testimonial.review}&quot;</p>
     <a href="#" className="text-blue-500 text-sm mt-2 block">
-      Read the full SmartDraw review
+      Read the full PSB review
     </a>
   </div>
 );
