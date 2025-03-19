@@ -5,7 +5,7 @@ import { getCurrentYear } from '@/utils/helpers';
 function Footer() {
     return (
         <>
-            <footer className="bg-white py-12">
+            <footer className="bg-gray-100 py-12 mt-10">
                 <div className="container mx-auto px-6 md:px-12 lg:px-24 w-[80%]">
                     <div className="flex flex-row justify-between items-center">
                         <h2 className="text-5xl text-black">
@@ -91,12 +91,12 @@ function Footer() {
                     </div>
                 </div>
             </footer>
-            <footer className="w-full h-16 bg-primary flex justify-center">
+            <footer className="bg-gray-900 w-full h-16 bg-primary flex justify-center">
                 <div className="w-[80%] flex flex-row justify-between items-center">
-                    <div className="text-tertiary_text">
-                        Copyright &copy; {getCurrentYear()} <span className="text-secondary"> PSB.</span> All Rights Reserved
+                    <div className="text-white">
+                        <span className="font-bold">Copyright &copy; {getCurrentYear()} PSB.</span> All Rights Reserved
                     </div>
-                    <div className="text-tertiary_text">User Terms and Conditions | Privacy Policy</div>
+                    <div className="text-white font-bold">User Terms and Conditions | Privacy Policy</div>
                 </div>
             </footer>
         </>
