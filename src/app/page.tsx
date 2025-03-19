@@ -3,6 +3,10 @@ import Navbar from "@/components/navbar";
 import { useState, useEffect } from "react";
 import nextConfig from "../../next.config";
 import Image from "next/image";
+import Testimonials from "@/components/testimonials";
+import CounterInfo from "@/components/counterInfo";
+import FAQ from "@/components/faq";
+import ContactForm from "@/components/contactForm";
 
 const images = [
   '/images/home/img1.jpg',
@@ -147,6 +151,7 @@ export default function Home() {
           ))}
         </div>
       </div>
+
       <div className=" py-10 w-full max-w-7xl mx-auto">
         <h1 className="font-bold text-center mb-10 text-gray-800">
           <span className="text-4xl">{'With our CAD Services'}</span> <br />
@@ -171,6 +176,11 @@ export default function Home() {
           <b>View All Services</b>
         </button>
       </div>
+
+      <Testimonials />
+      <CounterInfo />
+      <FAQ />
+      <ContactForm />
     </>
   );
 }
